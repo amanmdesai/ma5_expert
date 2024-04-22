@@ -178,6 +178,7 @@ print(collection)
 
 Extract the plotting information:
 ```python
+import matplotlib.pyplot as plt
 xbins, bins, weights = collection.lumi_histogram("SRA_Mh")
 plt.hist(xbins, bins=bins, weights=weights)
 plt.xlabel("$M_{h}\ {\\rm [GeV]}$")
